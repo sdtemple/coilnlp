@@ -5,7 +5,7 @@ import wordcloud
 from textblob import TextBlob
 
 # sklearn library
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer, TfidfVectorizer
 from sklearn.decomposition import NMF
 from sklearn.preprocessing import normalize
 
@@ -356,7 +356,7 @@ def find_word_in_sentences(word, df, n_context = 1):
         
     return output
 
-def polarity_counts(word, df):
+def polarity_counts(word, df, n_context = 1):
     '''
     Count TextBlob polarity for sentences containing word
     
@@ -368,7 +368,8 @@ def polarity_counts(word, df):
     :rtype: dict
     '''
     
-    sentences = find_word_in_sentences(word, df)
+    sentences = find_word_in_sentences(word, df, n_context = 1)
+    sentences = [x[5] for x in sentences]
     num_neg = 0
     num_neu = 0
     num_pos = 0
@@ -407,7 +408,7 @@ def novel_words(df, wordnet = wordnet, stopper = enstop):
                 
     return novel
 
-def word_counts(df, max_words = 25, ascending = True, stoppers = enstop):
+def word_counts(df, max_words = 25, ascending = False, stoppers = enstop):
     '''
     Compute word counts
     
