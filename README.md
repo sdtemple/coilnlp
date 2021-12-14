@@ -3,8 +3,8 @@
 This package contains Python functions for text data analysis. These functions are mostly sorting, list comprehensions, and methods from NLP libraries bundled into a user-friendly and documented form. Their purpose is to assist teachers and linguists that I consulted for in the analysis of blog posts.
 
 Example Analyses:
-*
-*
+* words
+* words
 
 Console:
 * `build_docs()` : build documents corpus
