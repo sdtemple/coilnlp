@@ -5,7 +5,6 @@ This package contains Python functions for text data analysis. These functions a
 Example Analyses:
 * `not_informed_analysis.ipynb` : generic text data analysis
 * `outcome_informed_analysis.ipynb` : text data analysis informed by known learning outcomes
-* words
 
 Console:
 * `build_docs()` : build documents corpus
