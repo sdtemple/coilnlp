@@ -1,6 +1,6 @@
 # coilnlp
 
-This package contains Python functions for text data analysis. These functions are mostly sorting, list comprehensions, and methods from NLP libraries bundled into a user-friendly and documented form. Their purpose is to assist teachers and linguists that I consulted for in the analysis of blog posts. Main function is `find_word_in_sentences()`. Based on other functions, linguists and teachers are expected to search for specific words in the sentences corpus. Tidying up the output can be achieved via list comprehensions.  
+This package contains Python functions for text data analysis. These functions are mostly sorting, list comprehensions, and methods from NLP libraries bundled into a user-friendly and documented form. Their purpose is to assist teachers and linguists that I consulted for in the analysis of blog posts. Main function is `find_word_in_sentences()`. Based on other functions, linguists and teachers are expected to search for specific words in the sentences corpus. Tidying up the output can be achieved via list comprehensions. (Functions expect specific dataframes.) In sum, this package promotes search informed by word frequencies and topic modeling, thereby leaving interpretation to the linguists and teachers. 
 
 Example Analyses:
 * words
