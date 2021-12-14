@@ -5,12 +5,13 @@ This package contains Python functions for text data analysis. These functions a
 Documentation:
 * `coil-install-sdtemple.pdf` : installation instructions
 * `coil-presi-sdtemple.pdf` : presentation slides
-* YouTube video
+* YouTube video (link)
 * `coil-report-sdtemple.pdf` : consulting write-up
 
 Example Analyses:
 * `not_informed_analysis.ipynb` : generic text data analysis
 * `outcome_informed_analysis.ipynb` : text data analysis informed by known learning outcomes
+* `foodmusic_analysis.ipynb` : text data analysis for Padlet on food and music
 
 Console:
 * `build_docs()` : build documents corpus
