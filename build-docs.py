@@ -23,10 +23,13 @@ with open(name, 'w') as output:
             # preprocessing
             text = f.read()
             text = re.sub(r'\n', r' ', text)
+            text = re.sub(r'[\u02BB\u02BC\u066C\u2018-\u201A\u275B\u275C]','\'', text)
+            text = re.sub(r'[\u0027\u02B9\u02BB\u02BC\u02BE\u02C8\u02EE\u0301\u0313\u0315\u055A\u05F3\u07F4\u07F5\u1FBF\u2018\u2019\u2032\uA78C\uFF07]', '\'', text)
+            text = re.sub('[\u201C-\u201E\u2033\u275D\u275E\u301D\u301E]', r'', text)
             text = ''.join(ch for ch in text if ord(ch) < 128)
-            text = ''.join(ch for ch in text if ord(ch) != ord(sep))
+            text = ''.join(ch for ch in text if ord(ch) != ord(sep)) # care with *.csv files
             if drop_punct:
-                text = re.sub(r'[^\w\s]', r' ', text)
+                text = re.sub(r'[^\w\s\']', r' ', text)
                 text = re.sub(r'_', r' ', text)
             text = text.lower()
             # writing
