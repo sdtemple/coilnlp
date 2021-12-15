@@ -5,7 +5,7 @@ This package contains Python functions for text data analysis. These functions a
 Documentation:
 * `coil-install-sdtemple.pdf` : installation instructions
 * `coil-presi-sdtemple.pdf` : presentation slides
-* YouTube video (link)
+* YouTube video ([link](https://youtu.be/TC_jlji8Vac))
 * `coil-report-sdtemple.pdf` : consulting write-up
 
 Example Analyses:
