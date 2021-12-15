@@ -4,9 +4,11 @@ This package contains Python functions for text data analysis. These functions a
 
 Documentation:
 * `coil-install-sdtemple.pdf` : installation instructions
+* Anaconda vs Colaboratory : [old YouTube video](https://www.youtube.com/watch?v=RyUyLs5Goo8)
 * `coil-presi-sdtemple.pdf` : presentation slides
-* YouTube video ([link](https://youtu.be/TC_jlji8Vac))
+* `coil-presi-sdtemple.mp4` : [YouTube video](https://youtu.be/TC_jlji8Vac)
 * `coil-report-sdtemple.pdf` : consulting write-up
+* PCA, NMF matrix methods : [old YouTube video](https://www.youtube.com/watch?v=ddAHjaL8sFo)
 
 Example Analyses:
 * `not_informed_analysis.ipynb` : generic text data analysis
